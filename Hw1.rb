@@ -18,19 +18,13 @@ end
 
   #task 2 (Kata 8)
 
-  def convert( s )
+def string_to_number(s)
     number = s.to_i
-      puts number
+      return number
   end
     
   
-  convert ("1234")
-  convert ("605")
-  convert ("1405")
-  convert ("-7")
-
-
-  #task 3 (Kata 7)
+   #task 3 (Kata 7)
 
 def locker_run x
   (1..Math.sqrt(x)).map { |i| i * i}
