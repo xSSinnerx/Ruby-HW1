@@ -1,17 +1,9 @@
 #task 1 (Kata 8)
 
 def count_positives_sum_negatives(lst)
-   pos, neg = 0, 0
-  
-    lst.each do |num|
-      if num <= 0
-        neg += num
-      else
-        pos += 1
-      end
-    end
-  
-    [pos, neg]
+  return [] if lst.nil? || lst.empty?
+
+  [lst.reject { |x| x < 1 }.count, (lst.reject { |x| x > -1 }).sum]
 end
     
   
